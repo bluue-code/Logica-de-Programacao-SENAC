@@ -1,6 +1,8 @@
-programa{
+programa
+{
 	
-	funcao inicio(){
+	funcao inicio()
+{
 		inteiro num
 		/*Crie um programa que solicita ao usuário para 
 		digitar um número e mostra-o por extenso. Este número deve variar 
@@ -12,16 +14,16 @@ programa{
 		se (num == 1){
 				escreva ("Número por extenso: UM")
 		}
-		se (num == 2){
+		senao se (num == 2){
 				escreva ("Número por extenso: DOIS")
 		}
-		se (num == 3){
+		senao se (num == 3){
 				escreva ("Número por extenso: TRÊS")
 		}
-		se (num == 4){
+		senao se (num == 4){
 				escreva ("Número por extenso: QUATRO")
 		}
-		se (num == 5){
+		senao se (num == 5){
 				escreva ("Número por extenso: CINCO")
 		}
 		senao{
