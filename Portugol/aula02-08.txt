@@ -1,0 +1,29 @@
+TIPOS DE ALGORITMO------------------------------------------------------------------------
+ALGORITMO SEQUENCIAL:
+	Obedece uma sequencia de comandos;
+		linear, etc etc...
+ALGORITIMO CONDICIONAL:
+	Se torna verdadeiro caso ocorra uma sequencia de comandos já pré estabelecidas;
+ALGORITMO DE LAÇOS:
+	Ocorre em looping enquando uma condição se mantiver verdadeira;
+EXEMPLOS-----------------------------------------------------------------------------------
+Cadastro
+	ALGORITMO SEQUENCIAL;
+Tabuada do 5
+	ALGORITMO DE LAÇOS e ALGORITMO SEQUENCIAL;
+Par ou Ímpar 
+	ALGORITIMO CONDICIONAL;
+Contar de 1 a 10
+	ALGORITMO DE LAÇOS;
+Soma de dois valores
+	ALGORITMO SEQUENCIAL;
+Senha correta
+	ALGORITMO DE LAÇOS, ALGORITMO SEQUENCIAL e ALGORITIMO CONDICIONAL;
+FUNÇÃO---------------------------------------------------------------------------------------
+Bloco de comandos com um nome com um objetivo específico
+	EXEMPLO (Portugol):
+		programa {
+			funcao inicio(){
+				escreva("Olá Mundo!")
+			}
+		}

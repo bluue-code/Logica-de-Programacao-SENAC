@@ -1,0 +1,28 @@
+LÓGICA PARA CADASTRO DE PRODUTOS ALIMENTÍCIOS
+
+ID do produto (utilizar ele para evitar duplicidade);
+
+Nome do produto
+
+Valor
+
+Custo
+
+Marca
+
+Data de validade
+
+Quantidade em estoque
+
+Fornecedor (cnpj);
+
+Quantidade vendida
+
+Ticket médio
+
+Categorização do produto
+	Preço;
+	Maior saída;
+
+
+
