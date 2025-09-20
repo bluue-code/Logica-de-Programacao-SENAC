@@ -1,0 +1,35 @@
+		Vetores e Matriz
+
+São variáveis que possuem diversas posições, e com isso armazena diversos valores.
+ 0  1  2  3  4  ...  n
+|  |  |  |  |  | ...|  |
+
+tipo nome[posições]
+
+Para percorrer um vetor, é necessário fazer um laço de repetição, onde a cada repetição a posição do vetor aumente ou diminua, dependendo da necessidade.
+
+real notas [19]
+
+nota[0] = 4,7
+
+para (x = 0;  x <= 18 ; x++){
+	escreva(Notas[x])
+	
+}
+
+Desvio Condicional
+
+Estrutura em programação que permite a um algoritmo tomar decisões, executando diferentes blocos de código dependendo do resultado de um teste lógico (verdadeiro ou falso)
+
+	se .. senão se.. senão
+	escolha .. caso
+Matriz
+
+
+vetor [linha][coluna]
+
+   0   1   2    3 
+0|   |   |   |    |
+1|   |   |   |    |
+2|   |   |   |    |
+3|   |   |   |    |
