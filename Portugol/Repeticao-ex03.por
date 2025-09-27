@@ -2,13 +2,15 @@ programa {
   funcao inicio() {
     /*Leia um número N e mostre todos os números pares de 0 até N. */
 
-    inteiro n
+    inteiro n, contador = 1
 
     escreva("Forneça um número inteiro: ")
     leia (n)
-    faca{
-      escreva(" " + n)
-      n = n - 2
-    }enquanto(n >= 0)
+    enquanto(contador < n){
+      se(contador % 2 == 0){
+        escreva(" "+contador)
+      }
+      contador++
+    }
   }
 }

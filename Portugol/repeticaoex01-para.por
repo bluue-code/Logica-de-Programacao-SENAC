@@ -1,17 +1,15 @@
 programa {
   funcao inicio() {
-    /*
-    
-    Escreva um algoritmo que mostre todos os números de 1 até 100.
-    
-    PRE TESTADO
-    enquanto(condição){
-      ...
-    } 
-    
-    */
-    inteiro contador = 100
-    enquanto (contador >= 0){
+
+    inteiro contador 
+    para(contador = 1; contador <= 100; contador++){
+      escreva(" "+contador)
+      se(contador == 50){
+        escreva("\n ")
+      }
+    }
+    //inteiro contador = 100
+    /*enquanto (contador >= 0){
         escreva (" "+ contador)
         se(contador == 50){
           escreva("\n")
@@ -28,6 +26,6 @@ programa {
           escreva("\n")
         }
         contador++
-    }
+    }*/
   }
 }
