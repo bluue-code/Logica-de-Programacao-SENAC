@@ -19,12 +19,13 @@ programa {
         
         
         
-        cadeia m_cadastro[9][4]
+        cadeia m_cadastro[9][5]
         
         
         escreva("\n<<< 🎮🕹️ BEM-VINDO A NOSSA LOJA!! 🕹️🎮 >>>\n")
-        inteiro menu, cad
+        inteiro menu, cad, aux
         inteiro linha, c, l = 0
+        cadeia produto
         faca{
           escreva("\nSelecione:\n1. Cadastro;\n2. Visualização;\n3. Saída;\n0. Sair;\nSua escolha: ")
           leia(menu)
@@ -43,6 +44,9 @@ programa {
               //Valor do produto
               escreva("Valor do produto: ")
               leia(m_cadastro[l][3])
+              //Codigo de barras
+              escreva("Código de barras: ")
+              leia(m_cadastro[l][4])
               escreva("========== Fim do cadastro! ==========\n")
               escreva("Cadastrar outro produto? 1. Sim 0. Não\nSua Escolha: ")
               leia (cad)
@@ -53,26 +57,33 @@ programa {
 
           senao se(menu == 2){
               escreva("\n======================================\n")
-              l -= 1
+              aux = l - 1
 
-              enquanto(l >= 0){
-                escreva(" ",l + 1, "º Console")
+              enquanto(aux >= 0){
+                escreva(" ",aux, "º Console")
               
-                escreva("\nNome: "+m_cadastro[l][0])
-                escreva("\nCódigo: "+l)
-                escreva("\nMarca: "+m_cadastro[l][2])
-                escreva("\nNúmero de estoque: "+m_cadastro[l][1])
+                escreva("\nNome: "+m_cadastro[aux][0])
+                escreva("\nMarca: "+m_cadastro[aux][2])
+                escreva("\nNúmero no estoque: "+m_cadastro[aux][1])
+                escreva("\nCódigo de barras: "+m_cadastro[aux][4])
               
                 escreva("\n======================================\n")
 
-                l--
+                aux--
               }
               
           }
           senao se(menu == 3){
-            //SAÍDA
-            escreva("\n======================================\n")
-            escreva("\nOperação 3 selecionada (preguiça de pensar nisso ;__;)...\n")
+            escreva("\n=============== Venda ================\n")
+            escreva("Forneça o código de barras: ")
+            leia(produto)
+            para(aux = 0; aux < l; aux++){
+              se(m_cadastro[aux][4] == produto){
+                  escreva("Quantidade: ")
+                  leia(m_cadastro[aux][1])
+                  m_cadastro[aux][1]-= 1
+              }
+            }
             escreva("\n======================================\n")
           }
           senao{
